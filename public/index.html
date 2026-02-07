@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>AI Coding Tutor</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">🧠 AI Coding Tutor</h1>
+      <p class="subtitle">
+        Paste your code. I won’t give you the solution — I’ll help you think it
+        through.
+      </p>
+
+      <textarea
+        id="codeInput"
+        placeholder="Paste your buggy code here..."
+      ></textarea>
+
+      <button id="analyzeBtn">
+        <span id="btnText">🔍 Analyze with AI</span>
+        <span id="loader" class="loader hidden"></span>
+      </button>
+
+      <div id="result" class="hidden">
+        <div class="card info">
+          <h2>🧠 Explanation</h2>
+          <p id="explanation"></p>
+        </div>
+
+        <div class="card questions">
+          <h2>❓ Guiding Questions</h2>
+          <ul id="hints"></ul>
+        </div>
+
+        <div class="card success">
+          ✋ No final code is given. Try fixing it yourself and test again!
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
